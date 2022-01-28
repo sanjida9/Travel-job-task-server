@@ -42,11 +42,11 @@ async function run() {
       res.send(singleBlog[0]);
     });
 
-    app.post("/newWatch", async (req, res) => {
-      const newWatchData = await req.body;
-      await blogsCollection.insertOne(newWatchData);
+    app.post("/newBlog", async (req, res) => {
+      const newBlogData = await req.body;
+      await blogsCollection.insertOne(newBlogData);
 
-      res.send(newWatchData);
+      res.send(newBlogData);
     });
 
     app.post("/placeOrder", async (req, res) => {
@@ -111,7 +111,7 @@ async function run() {
     });
 
     app.get("/getProducts", async (req, res) => {
-      const products = await watchesCollection.find({}).toArray();
+      const products = await blogsCollection.find({}).toArray();
 
       res.send(products);
     });
@@ -129,7 +129,7 @@ async function run() {
     // Delete Products
     app.post("/deleteProducts", async (req, res) => {
       const deleteReqId = await req.body.deleteReqId;
-      await watchesCollection.deleteOne({ _id: ObjectId(deleteReqId) });
+      await blogsCollection.deleteOne({ _id: ObjectId(deleteReqId) });
 
       res.send();
     });
