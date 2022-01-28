@@ -6,16 +6,12 @@
 
 ## Description
 
-## We guarantee that all of our watches for sale online are authentic. Every watch is guaranteed to be from one of our 100% authorized dealers or wholesalers. Each brand new watch comes with our in-house warranty. We know that finding the right watch takes time.
+## It's a travel related website
 
-### It's a website which is about selling different kind of watches
+### It's a website which is about Travel Blog
 
-### Users can choose their watches from here
+### User need to register and then login for showing the details of the travel blog
 
-### They can book the watches
+### User can write blog and give review
 
-### For placing order they need to register and then login
-
-### For placing order they need to register and then login
-
-### admin can manage the site and they can see all the orders from customer
+### admin can manage the site and they can create,update,delete any blog post.
